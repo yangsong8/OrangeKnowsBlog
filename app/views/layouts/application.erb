@@ -45,11 +45,10 @@
         </div>
         <ul>
           <li><a href="/" <%= "class='current'".html_safe if @nav == 'home' %>>首页</a></li>
-          <li><a href="/blog" <%= "class='current'".html_safe if @nav == 'blog' %>>博客</a></li>
-          <li><a href="/note" <%= "class='current'".html_safe if @nav == 'note' %>>笔记</a></li>
+          <li><a href="/blog" <%= "class='current'".html_safe if @nav == 'blog' %>>留学申请</a></li>
+          <li><a href="/note" <%= "class='current'".html_safe if @nav == 'note' %>>海外生活</a></li>
           <li><a href="/tag" <%= "class='current'".html_safe if @nav == 'tag' %>>分类</a></li>
-          <li><a href="/weibo" <%= "class='current'".html_safe if @nav == 'weibo' %>>微博</a></li>
-          <li><a href="<%= APP_CONFIG['show_me_url'] %>" <%= "class='current'".html_safe if @nav == 'me' %>>关于</a></li>
+          <!--<li><a href="/weibo" <%= "class='current'".html_safe if @nav == 'weibo' %>>微博</a></li>-->
         </ul>
       </div>
     </div><!-- nav -->
@@ -63,8 +62,7 @@
       <a href="https://github.com/robbin" class="github">Github</a>      
       <a href="mailto:fankai@gmail.com" class="mail">Email</a>
       <div class="powered-by">
-        <a href="http://robbinfan.com" title="robbin的自言自语">Powered by robbin</a>&nbsp;
-				<a href="http://www.elvenui.com/" title="Elvenui" target="_blank">Design by Elvenui</a>
+        <a href="localhost:3000" title="橙知：留学申请与生活">Powered by OrangeKnows</a>&nbsp;
       </div>
     </div><!-- footer -->
     <%= javascript_include_tag 'jquery', 'jquery-ujs', 'application' %>

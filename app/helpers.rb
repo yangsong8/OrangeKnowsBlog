@@ -56,9 +56,9 @@ RobbinSite.helpers do
   
   def blog_category_icon(blog)
     if blog.category == 'note'
-      "<span class='note_icon' title='学习笔记'></span>".html_safe
+      "<span class='note_icon' title='海外生活'></span>".html_safe
     else
-      "<span class='blog_icon' title='博客文章'></span>".html_safe
+      "<span class='blog_icon' title='留学申请'></span>".html_safe
     end
   end
   

@@ -1,0 +1,22 @@
+development: &default
+  session_secret: '1234567890'
+  site_url: 'http://localhost:3000'
+  site_title: '橙知博客:留学申请与生活'
+  site_motto: 'Today you talk to your tomorrow'
+  site_description: '橙知(OrangeKnows)官方博客，发表橙知的Elite们的对于申请的知道，以及海外生活的点滴'
+  show_me_url: 'http://robbinfan.com/blog/28/about-robbin'
+  blog_search_ping: false
+  google_cse: '007540752216561218107:cgbwg20yn_o'
+  weibo_api_key: '1234567890'
+  weibo_api_secret: '1234567890'
+  weibo_redirect_uri: 'http://robbinfan.com/weibo_callback'
+  weibo_uid: '1654762921'
+  weibo_uid_verifier: '6bd0aff2'
+  
+test: 
+  <<: *default
+
+production:
+  <<: *default
+  site_url: 'http://robbinfan.com'
+  blog_search_ping: true
