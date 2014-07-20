@@ -39,10 +39,10 @@
         </div>
       </div>
     </div><!-- content -->
-  
-    <div class="share clearfix">
+
+    <!-- <div class="share clearfix">
       <span><%= partial 'blog/weibo_share', :locals => {:content => (@blog.title + ":" + @blog.content).truncate(120).gsub(/\r|\n/, '')} %></span>
-    </div><!-- share -->
+    </div>share -->
     
     <div class="comment clearfix">
       <div id="comments">      
@@ -69,11 +69,11 @@
           <div id="comment_preview" class="con comment"></div>
           <%= f.submit '', :class => 'comment_btn' %>
         <% end %>
-        <div class="box" style="<%= "display:none;" if account_login? %>">
+        <!--<div class="box" style="<%= "display:none;" if account_login? %>">
           <button class="close"></button>
           <p>我想知道与谁交流思想，请用微博登录留言。</p>
           <button class="sina_btn"></button>
-        </div><!-- box -->
+        </div> box -->
       </div><!-- relative -->
       <% end %>
       
@@ -108,8 +108,8 @@
     
     // validate empty comment
     $('input.comment_btn').click(function(){
-      if ($('textarea#blog_comment_content').val().length < 3) {
-        $('div#comment-error-info').html('评论太少，多写点').show().fadeOut(3000);
+      if ($('textarea#blog_comment_content').val().length < 5) {
+        $('div#comment-error-info').html('请稍微多两句撒').show().fadeOut(3000);
         return false;
       }
     });
